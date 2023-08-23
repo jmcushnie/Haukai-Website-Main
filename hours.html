@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hours</title>
+    <script
+      src="https://kit.fontawesome.com/f83dfae58e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html"> <img src="/img/LOGO.png" alt="Logo" /></a>
+      <a
+        href="#main-menu"
+        id="main-menu-toggle"
+        class="menu-toggle"
+        aria-label="Open main menu"
+      >
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars fa-xl" aria-hidden="true"></span>
+      </a>
+      <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <a
+          href="#main-menu-toggle"
+          id="main-menu-close"
+          class="menu-close"
+          aria-label="Close main menu"
+        >
+          <span class="sr-only">Close main menu</span>
+          <span class="fa fa-close fa-xl" aria-hidden="true"></span>
+        </a>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="hours.html">HOURS</a></li>
+          <li><a href="reservations.html">RESERVATIONS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <a
+        href="#main-menu-toggle"
+        class="backdrop"
+        tabindex="-1"
+        aria-hidden="true"
+        hidden
+      ></a>
+    </header>
+
+    <main>
+      <div class="hero-container">
+        <img src="/img/Hero-img.png" alt="Image of Restaurant" />
+        <div class="hero-text">
+          <h1>STAFF HOURS</h1>
+          <p>Please see the calender below for rostered hours.</p>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="googleCalendar">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=80dd0274f22a54abec63f9b6ebd73a53b8532866b7e0ea52856a3b6f5ab1ff00%40group.calendar.google.com&ctz=Pacific%2FAuckland"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-1">
+        <h3>ADDRESS</h3>
+        <p>1 Island Street Kerikeri, <br />Bay of Islands</p>
+      </div>
+      <div class="footer-2">
+        <h3>OPENING HOURS</h3>
+        <p>
+          Monday, Tuesday - Closed<br />
+          Wednesday to Sunday - 5.50pm to 9.30pm
+        </p>
+      </div>
+      <div class="footer-3">
+        <h3>CONTACT</h3>
+        <p>
+          09 401 4019<br />
+          info@haukai.co.nz
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

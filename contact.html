@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+    <script
+      src="https://kit.fontawesome.com/f83dfae58e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html"> <img src="/img/LOGO.png" alt="Logo" /></a>
+      <a
+        href="#main-menu"
+        id="main-menu-toggle"
+        class="menu-toggle"
+        aria-label="Open main menu"
+      >
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars fa-xl" aria-hidden="true"></span>
+      </a>
+      <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <a
+          href="#main-menu-toggle"
+          id="main-menu-close"
+          class="menu-close"
+          aria-label="Close main menu"
+        >
+          <span class="sr-only">Close main menu</span>
+          <span class="fa fa-close fa-xl" aria-hidden="true"></span>
+        </a>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="hours.html">HOURS</a></li>
+          <li><a href="reservations.html">RESERVATIONS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <a
+        href="#main-menu-toggle"
+        class="backdrop"
+        tabindex="-1"
+        aria-hidden="true"
+        hidden
+      ></a>
+    </header>
+    <main>
+      <div class="hero-container">
+        <img src="/img/Hero-img.png" alt="Image of Restaurant" />
+        <div class="hero-text">
+          <h1>CONTACT US</h1>
+          <p>
+            We would love to hear from you! If you have any questions, comments,
+            or feedback, please feel free to reach out to using the contact form
+            below. Our team will get back to you as soon as possible.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-section-container">
+        <div class="contact-form">
+          <h2>Contact</h2>
+
+          <form
+            onSubmit="alert('Thank you for contacting us, we will get back to you shortly.')"
+          >
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              class="email"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              class="message"
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+
+            <button class="submit-button" type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Bay%20of%20Islands%20New%20Zealand+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+        </div>
+      </div>
+      <div class="contact-container">
+        <img src="/img/pexels-jonathan-borba-2983101.jpg" alt="Burger" />
+        <div class="contact-info">
+          <p>
+            Haukai Restaurant is easily accessible from Paihia and surrounding
+            areas. From Paihia, head northwest on Puketona Road and turn left
+            onto State Highway 10. Continue for approximately 5km and look out
+            for our sign on the right-hand side. We offer ample on-site parking
+            for our guests. We look forward to welcoming you!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-1">
+        <h3>ADDRESS</h3>
+        <p>1 Island Street Kerikeri, <br />Bay of Islands</p>
+      </div>
+      <div class="footer-2">
+        <h3>OPENING HOURS</h3>
+        <p>
+          Monday, Tuesday - Closed<br />
+          Wednesday to Sunday - 5.50pm to 9.30pm
+        </p>
+      </div>
+      <div class="footer-3">
+        <h3>CONTACT</h3>
+        <p>
+          09 401 4019<br />
+          info@haukai.co.nz
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

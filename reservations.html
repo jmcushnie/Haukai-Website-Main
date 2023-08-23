@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Reservations</title>
+    <script
+      src="https://kit.fontawesome.com/f83dfae58e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html"> <img src="/img/LOGO.png" alt="Logo" /></a>
+      <a
+        href="#main-menu"
+        id="main-menu-toggle"
+        class="menu-toggle"
+        aria-label="Open main menu"
+      >
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars fa-xl" aria-hidden="true"></span>
+      </a>
+      <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <a
+          href="#main-menu-toggle"
+          id="main-menu-close"
+          class="menu-close"
+          aria-label="Close main menu"
+        >
+          <span class="sr-only">Close main menu</span>
+          <span class="fa fa-close fa-xl" aria-hidden="true"></span>
+        </a>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="hours.html">HOURS</a></li>
+          <li><a href="reservations.html">RESERVATIONS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <a
+        href="#main-menu-toggle"
+        class="backdrop"
+        tabindex="-1"
+        aria-hidden="true"
+        hidden
+      ></a>
+    </header>
+
+    <div class="hero-container">
+      <img src="/img/Hero-img.png" alt="Image of Restaurant" />
+      <div class="hero-text">
+        <h1>Make a Reservation</h1>
+        <p>
+          We would love you to come and see us, fill out the form below to make
+          your reservation. See you then!
+        </p>
+      </div>
+    </div>
+    <main>
+      <div class="section-container">
+        <form
+          onSubmit="alert('Booking complete, See you soon!')"
+          class="booking-form"
+        >
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+            required
+          /><br />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required /><br />
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required /><br />
+
+          <label for="guests">Number of Guests:</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="10"
+            required
+          /><br />
+
+          <label for="requests">Special Requests:</label><br />
+          <textarea id="requests" name="requests" rows="4" cols="50"></textarea
+          ><br />
+
+          <button class="submit-button" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="img-container">
+        <img src="/img/pexels-jhoon-133732721.png" alt="Food" />
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-1">
+        <h3>ADDRESS</h3>
+        <p>1 Island Street Kerikeri, <br />Bay of Islands</p>
+      </div>
+      <div class="footer-2">
+        <h3>OPENING HOURS</h3>
+        <p>
+          Monday, Tuesday - Closed<br />
+          Wednesday to Sunday - 5.50pm to 9.30pm
+        </p>
+      </div>
+      <div class="footer-3">
+        <h3>CONTACT</h3>
+        <p>
+          09 401 4019<br />
+          info@haukai.co.nz
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Menu</title>
+    <script
+      src="https://kit.fontawesome.com/f83dfae58e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html"> <img src="/img/LOGO.png" alt="Logo" /></a>
+      <a
+        href="#main-menu"
+        id="main-menu-toggle"
+        class="menu-toggle"
+        aria-label="Open main menu"
+      >
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars fa-xl" aria-hidden="true"></span>
+      </a>
+      <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <a
+          href="#main-menu-toggle"
+          id="main-menu-close"
+          class="menu-close"
+          aria-label="Close main menu"
+        >
+          <span class="sr-only">Close main menu</span>
+          <span class="fa fa-close fa-xl" aria-hidden="true"></span>
+        </a>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="hours.html">HOURS</a></li>
+          <li><a href="reservations.html">RESERVATIONS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <a
+        href="#main-menu-toggle"
+        class="backdrop"
+        tabindex="-1"
+        aria-hidden="true"
+        hidden
+      ></a>
+    </header>
+
+    <main>
+      <div class="hero-container">
+        <img src="/img/Hero-img.png" alt="Image of Restaurant" />
+        <div class="hero-text">
+          <p>
+            Our menu offers a delectable selection of dishes crafted with the
+            freshest ingredients. From classic comfort food to modern twists on
+            traditional favorites, our chefs have created a culinary journey
+            that will tantalize your taste buds.
+          </p>
+          <a class="button" href="reservations.html">BOOK NOW</a>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="menu-section">
+          <h2>APPETIZERS</h2>
+          <ul>
+            <li>
+              <h3>REWENA BREAD</h3>
+              <p>Traditional Māori bread, $10</p>
+            </li>
+            <li>
+              <h3>PAUA FRITTER</h3>
+              <p>
+                Finely diced pieces of paua, served with a side salad and
+                horopito dressing, $16.00
+              </p>
+            </li>
+            <li>
+              <h3>RAW FISH</h3>
+              <p>
+                Dried snapper fish marinated in coconut cream, served with
+                tomatoes and spring onions, $20
+              </p>
+            </li>
+            <li>
+              <h3>POACHED SALMON</h3>
+              <p>
+                Salmon poached in an orange and pistachio glaze, served with
+                rewena bread, $22
+              </p>
+            </li>
+            <li>
+              <h3>SEAFOOD BASKET</h3>
+              <p>
+                Crumbed mussels, salt and pepper squid, crumbed hoki bites and
+                garlic prawns, $25
+              </p>
+            </li>
+          </ul>
+
+          <h2>MAIN</h2>
+          <ul>
+            <li>
+              <h3>FISH OF THE DAY</h3>
+              <p>
+                Beer-battered fish and kumara fries, served with a side salad
+                and homemade tartare, $25
+              </p>
+            </li>
+            <li>
+              <h3>MUSSELS AND SCALLOPS</h3>
+              <p>
+                Steamed mussel &amp; scallop mousse, honey and soy broth, $25
+              </p>
+            </li>
+            <li>
+              <h3>SEAFOOD CHOWDER</h3>
+              <p>
+                Creamy chowder filled with tarakihi, prawn, hoki, scallops and
+                mussels, served with flatbread, $30
+              </p>
+            </li>
+            <li>
+              <h3>PORK BELLY</h3>
+              <p>
+                Slow-cooked pork belly served on a bed of apple slaw with
+                roasted kumara and crispy noodles, $30
+              </p>
+            </li>
+            <li>
+              <h3>LAMB STEAK</h3>
+              <p>
+                New Zealand lamb coated in a kawakawa crumb, served with
+                Dijon-mustard-glazed carrots, roasted butternut squash and
+                mushroom jus, $33
+              </p>
+            </li>
+            <li>
+              <h3>VENISON</h3>
+              <p>
+                Venison crusted with Horopito, served with glazed plums, cabbage
+                salad and red wine jus, $33
+              </p>
+            </li>
+          </ul>
+
+          <h2>DESSERTS</h2>
+          <ul>
+            <li>
+              <h3>KAPITI ICE CREAM</h3>
+              <p>Check for daily specials, $10</p>
+            </li>
+            <li>
+              <h3>STEAMED PUDDING</h3>
+              <p>
+                Golden-syrup-flavoured steamed pudding, served with vanilla ice
+                cream, $12
+              </p>
+            </li>
+            <li>
+              <h3>MINI PAVLOVA</h3>
+              <p>
+                Mini pavlova, served with kawakawa and lemon-infused cream and
+                fresh fruit, $16
+              </p>
+            </li>
+            <li>
+              <h3>BANOFFEE PIE</h3>
+              <p>Toffee, fresh bananas and fresh cream, $16</p>
+            </li>
+          </ul>
+          <h2>BEVERAGES</h2>
+          <ul>
+            <li>
+              <h3>RED</h3>
+              <p>
+                Terrace Edge Pinot Noir, 2012, Wairarapa, 53/13<br />
+                Altitude Pinot Noir, 2010, Marlborough, 64/15<br />
+                Greystone Pinot Noir, 2012, Wairarapa, 73/17<br />
+                Terrace Edge, Syrah, 2012, Wairarapa, 53/13<br />
+                Altitude Syrah, 2010, Marlborough, 64/15<br />
+                Greystone Syrah, 2012, Wairarapa, 73/17<br />
+                Pegasus Bay Merlot, 2013, Waipara, 65/14<br />
+                Pegasus Bay Pinot Noir, 2013, Waipara, 110
+              </p>
+            </li>
+            <li>
+              <h3>WHITE</h3>
+              <p>
+                Spade Oak Pinot Gris, 2011, Gisborne, 40/10<br />
+                Maude Pinot Gris, 2017, Otago, 49.50/11<br />
+                Charles Wiffen Chardonnay, 2013, Otago, 48/11<br />
+                Amisfield, Riesling, 2016, Otago, 53/12<br />
+                Lamont Riesling, 2010, Otago, 57/13<br />
+                Elephant Hill Viognier, 2013, Hawke’s Bay, 55/12<br />
+                Folium Sauvignon Blanc, 2011, Marlborough, 52/11<br />
+                Billecart-Salmon Brut Reserve, France, 120<br />
+              </p>
+            </li>
+            <li>
+              <h3>BEER AND CIDER</h3>
+              <p>
+                Garage project range, 11<br />
+                Tuatara range, 11<br />
+                Panhead range, 10<br />
+                Coopers ale, 10 <br />
+                Heineken, 11<br />
+                Moa cider, 10<br />
+                Crooked cider, 10<br />
+              </p>
+            </li>
+            <li>
+              <h3>NON ALCOHOLIC</h3>
+              <p>
+                Mineral water, 4.00<br />
+                Soft drinks, 4.00<br />
+                Juice, 4.00<br />
+                Coffee, 4.50<br />
+                Tea, 3.50<br />
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <div class="img-container">
+      <img src="/img/pexels-jhoon-133732721.png" alt="Food" />
+    </div>
+
+    <footer>
+      <div class="footer-1">
+        <h3>ADDRESS</h3>
+        <p>1 Island Street Kerikeri, <br />Bay of Islands</p>
+      </div>
+      <div class="footer-2">
+        <h3>OPENING HOURS</h3>
+        <p>
+          Monday, Tuesday - Closed<br />
+          Wednesday to Sunday - 5.50pm to 9.30pm
+        </p>
+      </div>
+      <div class="footer-3">
+        <h3>CONTACT</h3>
+        <p>
+          09 401 4019<br />
+          info@haukai.co.nz
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
